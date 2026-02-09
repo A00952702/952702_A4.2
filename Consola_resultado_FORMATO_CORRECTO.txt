@@ -1,0 +1,26 @@
+(.venv) (base) gerardosolis@MacBook-Pro-de-GERARDO-2 952702_A4.2 % python -m pylint src/ejercicio1.py src/ejercicio2.py src/ejercicio3.py
+
+************* Module src.ejercicio3
+src/ejercicio3.py:1:0: R0801: Similar lines in 2 files
+==src.ejercicio2:[80:90]
+==src.ejercicio3:[83:93]
+            out.write(row + "\n")
+        out.write(f"ELAPSED_SECONDS: {elapsed:.6f}\n")
+
+    print(f"ELAPSED_SECONDS: {elapsed:.6f}")
+    return elapsed
+
+
+def main() -> None:
+    """main"""
+    if len(sys.argv) != 2: (duplicate-code)
+
+------------------------------------------------------------------
+Your code has been rated at 9.97/10 (previous run: 9.80/10, +0.17)
+
+(.venv) (base) gerardosolis@MacBook-Pro-de-GERARDO-2 952702_A4.2 % python -m pylint src/ejercicio1.py src/ejercicio2.py src/ejercicio3.py
+
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 9.97/10, +0.03)
+
